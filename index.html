@@ -7,69 +7,111 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         
-    <title>Document</title>
+    <title>Cortez landing page</title>
 </head>
 <style>
-
+    .navcont{
+        background: #ce1c1c00;
+    }
     section{
         min-height: 100vh;
     }
     .section1{
         
-        
-        padding: 0px 100px 0px 100px;
     }
-    nav{
+    .navigation{
     /*background-color: rgba(85, 78, 43, 0); */
-    background-color: whitesmoke;
+    background: whitesmoke;
     height: 10vh;
+    }
+
+    .mnav{
+        font-size: 18px; 
+        margin-left: 30%;
     }
     
     #content1{  
         background-image: url(cortez.png);
         background-repeat: no-repeat;
         background-position: right 100%;
-        background-size: 700px 850px;    
+        background-size: 800px 950px;    
         padding: 300px 0px 500px 0px;
         height: 90vh;
+        padding: 300px 300px 0px 300px;
+        
+    }
+    
+    .infos{
+        padding: 100px 100px;
+    }
+    #containerinfo{
+        padding: 100px 100px;
+        border: 2px solid red;
     }
 
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 600px) {
+
+        .navcont{
+            background: whitesmoke;
+        }
         .cardbody{
             height: auto;
         }
+        #content1{
+            padding: 180px 20px 0px 20px;
+            background-image: none;
+        }
+        #content1 h1{
+            font-size: 18px;
+        }
+        nav{
+            background-color: #0083ca00;
+        }
+
+        .mnav{
+        font-size: 18px; 
+        margin-left: 40%;
+        }
+        
+        #containerinfo{
+        padding: 0px 0px;
+        }
+
+        .info2{
+            margin-top: 50px;
+        }
+
 }
 
 </style>
 <body>
     <section class="section1">
-        <div class="contianer">
-            <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: rgba(255, 255, 255, 0);">
-                <div id="navigation" class="container-fluid ">
+        
+            <nav class="navbar navbar-expand-lg navbar-light navigation" >
+                <div id="navigation" class="container navcont">
                     <h1><span style="color:aqua;">CJ</span>DC </h1>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse" >
-                        <div class="navbar-nav " style="font-size: 18px; margin-left: 40%;">
+                    <div class="collapse navbar-collapse navcont my-2" id="navbarCollapse" >
+                        <div class="navbar-nav mnav" >
                             <a href="#" class="nav-item nav-link active " style="color: black;">Home</a>
                             <a href="#" class="nav-item nav-link " style="color: black;">Services</a>
                             <a href="#" class="nav-item nav-link " style="color: black;">About</a>
                             <a href="#" class="nav-item nav-link " style="color: black;">Contact</a>
                         </div>
                         <div class="navbar-nav ms-auto login">
-                            <a href="#" class="nav-item nav-link " style="color: black;">Register</a>
-                            <!--<a href="#" class="nav-item nav-link " style="color: white;">Login</a>-->
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <button type="button" class="btn btn-outline-primary  mx-2 my-2">Register</button>
+                            <button type="button" class="btn btn-primary mx-2 my-2">Login</button>
                         </div>
                     </div>
                 </div>
             </nav>
-        </div>
+        
 
-        <div id="content1" class="container-fluid" >
-            <div id="description1" class="col-md-6 "><!--border border-warning-->
-                <h1 style="font-size: 50px;">I'm <span style="color: aqua;">Cedric</span> Cortez</h1>
+        <div id="content1" class="container-fluid">
+            <div id="description1" class="col-md-6"><!--border border-warning-->
+                <h1 style="font-size: 60px;">I'm <span style="color: aqua;">Cedric</span> Cortez</h1>
                 <p style="font-size: 18px;">
                     To find a good opportunity to have a beter work that will help me to improve and enhance my skills and knowledge.
                 </p>
@@ -116,17 +158,17 @@
                 
                 <div id="container4" class="container ">
                     <div class="container">
-                        <h1 class="text-center py-5" style="color: aqua">Personal Information</h1>
+                        <h1 class="text-center infos" style="color: aqua">Personal Information</h1>
                     
-                        <div id="container4" class="container row">
-                            <div  class="col-sm-6 "  style="padding: 0px 100px;">
-                                <h5><b>Name:</b> <span>Cedric, Jaquine D. Cortez</span></h5>
+                        <div id="containerinfo" class="container-fluid row">
+                            <div  class="col-sm-6 " >
+                                <h5><b>Name:</b> <span>Cedric, Jaquine D. Cortez</span></h5> <h5><b>Height:</b> <span>5'5</span></h5>
                                 <h5><b>Age:</b> <span>19</span></h5>
                                 <h5><b>Birthdate:</b> <span>September 27, 2003</span></h5>
                                 <h5><b>Birth Place:</b> <span>Devine Mercy Hostpital</span></h5>
                             </div>
     
-                            <div class="col-sm-6" style="padding: 0px 100px;">
+                            <div class="col-sm-6 info2" >
                                 <h5><b>Height:</b> <span>5'5</span></h5>
                                 <h5><b>Weight:</b> <span>54</span></h5>
                                 <h5><b>Status:</b> <span>Single</span></h5>
